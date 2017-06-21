@@ -5,10 +5,10 @@
 using namespace cv;
 using namespace std;
 
-#define NUM_SAMPLES 20      //每个像素点的样本个数  
-#define MIN_MATCHES 2       //#min指数  
-#define RADIUS 30       //Sqthere半径  
-#define SUBSAMPLE_FACTOR 16 //子采样概率  
+#define NUM_SAMPLES 10      //每个像素点的样本个数  
+#define MIN_MATCHES 3       //#min指数  
+#define RADIUS 40       //Sqthere半径  
+#define SUBSAMPLE_FACTOR 3 //子采样概率  
 
 
 class ViBe_BGS
