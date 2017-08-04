@@ -4,7 +4,7 @@
 #include "ViBe.h"  
 #include <iostream>  
 #include <cstdio>  
-
+#include <opencv_all.h>
 using namespace cv;
 using namespace std;
 
@@ -39,9 +39,9 @@ int main(int argc, char* argv[])
 		cvtColor(frame, grayImg, CV_RGB2GRAY);
 		clock_t starttime = clock();
 
-		Vibe_Bgs.init(gray);//模型的灰度图初始化
+		Vibe_Bgs.init(gray);//模锟酵的灰讹拷图锟斤拷始锟斤拷
 		Vibe_Bgs.processFirstFrame(gray);
-		Vibe_Bgs.testAndUpdate(grayImg);//实时更新的灰度图
+		Vibe_Bgs.testAndUpdate(grayImg);//实时锟斤拷锟铰的灰讹拷图
 		mask = Vibe_Bgs.getMask();
 
 		morphologyEx(mask, mask, MORPH_OPEN, Mat());
