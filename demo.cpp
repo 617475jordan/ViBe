@@ -8,7 +8,7 @@
 using namespace cv;
 using namespace std;
 
-int main(int argc, char* argv[])
+int main()
 {
 	Mat frame, gray, mask;
 	Mat grayImg;
