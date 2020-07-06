@@ -39,9 +39,9 @@ int main()
 		cvtColor(frame, grayImg, CV_RGB2GRAY);
 		clock_t starttime = clock();
 
-		Vibe_Bgs.init(gray);//ģ�͵ĻҶ�ͼ��ʼ��
+		Vibe_Bgs.init(gray);
 		Vibe_Bgs.processFirstFrame(gray);
-		Vibe_Bgs.testAndUpdate(grayImg);//ʵʱ���µĻҶ�ͼ
+		Vibe_Bgs.testAndUpdate(grayImg);
 		mask = Vibe_Bgs.getMask();
 
 		morphologyEx(mask, mask, MORPH_OPEN, Mat());
